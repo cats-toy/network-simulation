@@ -35,4 +35,8 @@
 <p>After installing and configuring your EVE-NG community VM, we can login to the EVE-NG CLI by typing the IP address of the EVE-NG VM into a browser.</p>
 
 <h1>Constructing network topologies</h1>
-<p></p>
+<h2>Basic BGP routing</h2>
+<p>Border Gateway Protocol(BGP) is a gateway protocol that is used to transfer or exchange routing and reachability information amoing autonomous systems. In this lab, I set up two routers and two virtual computer nodes. I used BGP to connect the two routers to each other to allow contact between the nodes in the different subnets. I was able to ping VPC4 from VPC3. The nodes use the Cisco CLI to run commands. I assigned IP addresses to each router's interface, e0/0 facing the internet and e0/1 facing their respective VPC. I set the IP addresses and default gateways for the VPCs as well.</p>
+<img src="https://imgur.com/mkTCKGU.png" width = 400 height = 200>
+
+<h2>BGP routing, multiple subnets</h2>
